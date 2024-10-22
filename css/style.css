@@ -525,14 +525,15 @@ mark,
   font-size: 80%;
   color: #6c757d;
 }
-
-.blockquote-footer::before {
-  content: "\2014\00A0";
+.owl-carousel.testimonial-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 244px;
 }
 
 .img-thumbnail {
@@ -633,9 +634,12 @@ pre code {
     max-width: 1140px;
   }
 }
-
+.owl-item {
+  height: 384px;
+}
 .row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -700,6 +704,9 @@ pre code {
   max-width: 16.66667%;
 }
 
+.col-6 img {
+  height: 179px;
+}
 .col-auto {
   flex: 0 0 auto;
   width: auto;
@@ -1084,8 +1091,7 @@ pre code {
     max-width: 25%;
   }
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    margin: 10px;
   }
   .col-md-5 {
     flex: 0 0 41.66667%;
@@ -7277,6 +7283,8 @@ button.bg-dark:focus {
 
 .w-100 {
   width: 100% !important;
+  /* height: 46rem; */
+
 }
 
 .w-auto {
@@ -7722,6 +7730,7 @@ button.bg-dark:focus {
 .mt-n5,
 .my-n5 {
   margin-top: -3rem !important;
+  height: 281px;
 }
 
 .mr-n5,
@@ -9589,6 +9598,9 @@ h6,
 
 .destination-item img {
   transition: .5s;
+  width: 100%;
+  background-size: cover;
+  height: 218px;
 }
 
 .destination-item:hover img {
@@ -9621,6 +9633,7 @@ h6,
 
 .service-item {
   transition: .5s;
+  height: 366px;
 }
 
 .service-item:hover {
@@ -9714,6 +9727,7 @@ h6,
 
 .team-item .team-img img {
   transition: .5s;
+  height: 249px;
 }
 
 .team-item:hover .team-img img {
